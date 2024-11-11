@@ -1,33 +1,118 @@
 {
-  "projects": [
+  "cinemas": [
     {
       "id": 1,
-      "title": "Module 2 Project",
-      "description": "Module 2 project - Integrate a React app with backend.",
-      "userId": 1
+      "name": "Cine Callao",
+      "cover": [
+        "https://callaocitylights.es/wp-content/uploads/2021/01/sala-1-anfiteatro_06-1024x526.jpg",
+        "https://patrimonioypaisaje.madrid.es/FWProjects/monumenta/Edificios/02112/02112_01.JPG",
+        "https://callaocitylights.es/wp-content/uploads/2024/09/ANFITEATRO-_-14.png"
+      ],
+      "address": {
+        "street": "Plaza de Callao 2",
+        "city": "Madrid",
+        "zipcode": 28002,
+        "country": "Spain"
+      },
+      "url": "www.cinescallao.es",
+      "price": {
+        "regular": 7.50,
+        "weekend": 8,
+        "special": 6.50
+      },
+      "specs": {
+        "VO": false,
+        "3D": true,
+        "accesibility": true
+      },
+      "capacity": {
+        "dicerooms": 7,
+        "seating": 1500
+      },
+      "services": [
+        "Parking",
+        "Toilettes",
+        "Food & Drinks"
+      ]
     },
     {
       "id": 2,
-      "title": "Module 3 Project",
-      "description": "Create a full-stack application using MERN stack.",
-      "userId": 1
+      "name": "Cine Paz",
+      "cover": [
+        "https://static.eldiario.es/clip/1f5d7872-d14a-4da2-93d1-d111c8e9b104_16-9-discover-aspect-ratio_default_0.jpg",
+        "https://files.venuu.se/attachments/000/264/991/62157836bc1f3c1d799cd9214a23f29e161f8451.jpg",
+        "https://www.cinepazmadrid.es/data/fotos/foto-nervion-webempresas.png"
+      ],
+      "address": {
+        "street": "Plaza Fuencarral 125",
+        "city": "Madrid",
+        "zipcode": 28010,
+        "country": "Spain"
+      },
+      "url": "www.cinepazmadrid.es",
+      "price": {
+        "regular": 8.50,
+        "weekend": 9,
+        "special": 6.50
+      },
+      "specs": {
+        "VO": true,
+        "3D": false,
+        "accesibility": true
+      },
+      "capacity": {
+        "dicerooms": 5,
+        "seating": 1000
+      },
+      "services": [
+        "Toilettes",
+        "Food & Drinks"
+      ]
     }
   ],
-  "tasks": [
+  "movies": [
     {
       "id": 1,
-      "projectId": 1,
-      "description": "Use Vite to create a basic React app"
+      "cinemaId": 1,
+      "title": {
+        "original": "Anora",
+        "spanish": "Anora"
+      },
+      "poster": "https://postercinema.eu/cdn/shop/files/anora_kmkrbunr.jpg?v=1729715939",
+      "country": "USA",
+      "language": "ENG",
+      "duration": 139,
+      "gender": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "calification": "+16",
+      "released": true,
+      "date": "Thu Oct 31 2024 00:00:00 GMT+0100"
     },
     {
       "id": 2,
-      "projectId": 1,
-      "description": "Install React Router and setup routes"
-    },
-    {
-      "id": 3,
-      "projectId": 2,
-      "description": "Create a form with 5 input fields"
+      "cinemaId": [
+        1,
+        2
+      ],
+      "title": {
+        "original": "Gladiator II",
+        "spanish": "Gladiator II"
+      },
+      "poster": "https://www.mubis.es/media/articles/34026/332943/nuevo-trailer-y-poster-de-gladiator-ii-original.jpg",
+      "country": "USA",
+      "language": "ENG",
+      "duration": 147,
+      "gender": [
+        "Acción",
+        "Drama",
+        "Aventura"
+      ],
+      "calification": "+16",
+      "released": false,
+      "date": null
     }
   ]
 }
